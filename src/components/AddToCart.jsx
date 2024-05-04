@@ -126,7 +126,7 @@ const AddToCart = () => {
                 </div>
               ))}
             </div>
-            <div class="bg-gray-100 p-8 fixed right-7">
+            <div class="bg-gray-100 p-8 right-7">
               <h3 class="text-2xl font-bold text-[#333]">Order summary</h3>
               <ul class="text-[#333] mt-6 divide-y">
                 <li class="flex flex-wrap gap-4 text-md py-3">

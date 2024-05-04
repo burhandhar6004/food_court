@@ -46,7 +46,7 @@ const MainMenu = () => {
   return (
     <>
       <div className="Paratha">
-        <h3 class="mb-4  text-3xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-3xl dark:text-white mt-20 ml-10">
+        <h3 class="mb-4  text-3xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-3xl dark:text-white mt-32 ml-10">
           {" "}
           <mark class="px-2 text-center text-white bg-orange-600 rounded dark:bg-green-500">
             Paratha
@@ -54,7 +54,7 @@ const MainMenu = () => {
         </h3>{" "}
         <br />
         <div className="card-items">
-          <div class="grid grid-cols-2 md:grid-cols-4 gap-4 justify-items-center ">
+          <div class="grid grid-cols-1 md:grid-cols-4 gap-4 justify-items-center ">
             {parathas?.map((paratha) => (
               <Paratha key={paratha._id} paratha={paratha} />
             ))}
@@ -71,7 +71,7 @@ const MainMenu = () => {
         </h3>{" "}
         <br />
         <div className="card-items">
-          <div class="grid grid-cols-2 md:grid-cols-4 gap-4 justify-items-center ">
+          <div class="grid grid-cols-1 md:grid-cols-4 gap-4 justify-items-center ">
             {burgers?.map((burger) => (
               <Burger key={burger._id} burger={burger} />
             ))}
@@ -88,7 +88,7 @@ const MainMenu = () => {
         </h3>{" "}
         <br />
         <div className="card-items">
-          <div class="grid grid-cols-2 md:grid-cols-4 gap-4 justify-items-center">
+          <div class="grid grid-cols-1 md:grid-cols-4 gap-4 justify-items-center">
             {pizzas?.map((pizza) => (
               <Pizza key={pizza._id} pizza={pizza} />
             ))}
@@ -105,7 +105,7 @@ const MainMenu = () => {
         </h3>{" "}
         <br />
         <div className="card-items">
-          <div class="grid grid-cols-2 md:grid-cols-4 gap-4 justify-items-center">
+          <div class="grid grid-cols-1 md:grid-cols-4 gap-4 justify-items-center">
             {deserts?.map((desert) => (
               <Desert key={desert._id} desert={desert} />
             ))}
@@ -122,7 +122,7 @@ const MainMenu = () => {
         </h3>{" "}
         <br />
         <div className="card-items">
-          <div class="grid grid-cols-2 md:grid-cols-4 gap-4 justify-items-center">
+          <div class="grid grid-cols-1 md:grid-cols-4 gap-4 justify-items-center">
             {soups?.map((soup) => (
               <Soup key={soup._id} soup={soup} />
             ))}
@@ -139,7 +139,7 @@ const MainMenu = () => {
         </h3>{" "}
         <br />
         <div className="card-items">
-          <div  class="grid grid-cols-2 md:grid-cols-4 gap-4 justify-items-center">
+          <div  class="grid grid-cols-1 md:grid-cols-4 gap-4 justify-items-center">
             {
               beverages?.map(beverage => <Beverage key={beverage._id} beverage={beverage} />)
             }

@@ -8,40 +8,40 @@ const MenuCardSlice = createSlice({
   },
 
   reducers: {
-    // addItem: (state, action) => {
-    //     return{
-    //         ...state,
-    //         cardsItem:[...state.cardsItem, action.payload],
-    //     }
-    //     },
-    //   const itemIndex = state.cardsItem.findIndex(
-    //     (item) => item.id === action.payload.id
-    //   );
-    //   if (itemIndex >= 0) {
-    //     state.cardsItem[itemIndex].qty += 1;
-    //   } else {
-    //     const tempProduct = { ...action.payload, qty: 1 };
-    //     state.cardsItem.push(tempProduct);
-    //   }
-
     addItem: (state, action) => {
-        const existing = state.cardsItem.find(
-          (item) => item.id === action.payload.id
-        );
-        if (existing) {
-          console.log("in exist");
-          state.cardsItem = state.cardsItem.map((item) =>
-            item.id === action.payload.id
-              ? { ...item, qty: parseInt(item.qty)  + 1 }
-              : { ...item, qty: parseInt(item.qty) }
-          );
-        } else {
-          console.log("in new");
-          return {
+        return{
             ...state,
-            cardsItem: [action.payload, ...state.cardsItem],
-          };
-        }},
+            cardsItem:[...state.cardsItem, action.payload],
+        }
+        },
+      // const itemIndex = state.cardsItem.findIndex(
+      //   (item) => item.id === action.payload.id
+      // );
+      // if (itemIndex >= 0) {
+      //   state.cardsItem[itemIndex].qty += 1;
+      // } else {
+      //   const tempProduct = { ...action.payload, qty: 1 };
+      //   state.cardsItem.push(tempProduct);
+      // }},
+
+    // addItem: (state, action) => {
+    //     const existing = state.cardsItem.find(
+    //       (item) => item.id === action.payload.id
+    //     );
+    //     if (existing) {
+    //       console.log("in exist");
+    //       state.cardsItem = state.cardsItem.map((item) =>
+    //         item.id === action.payload.id
+    //           ? { ...item, qty: parseInt(item.qty)  + 1 }
+    //           : { ...item, qty: parseInt(item.qty) }
+    //       );
+    //     } else {
+    //       console.log("in new");
+    //       return {
+    //         ...state,
+    //         cardsItem: [action.payload, ...state.cardsItem],
+    //       };
+    //     }},
    
 
     // INCREASE
