@@ -13,9 +13,10 @@ import { fetchPizzas } from "../features/pizza/pizzaSlice";
 import { fetchDesert } from "../features/desert/desertSlice";
 import { fetchSoup } from "../features/soup/soupSlice";
 import { fetchBever } from "../features/beverages/bevrSlice";
+import { LinearProgress, Typography } from "@mui/material";
 
 const MainMenu = () => {
-  const { parathas } = useSelector((state) => state.parathas);
+  const { parathas,isLoading } = useSelector((state) => state.parathas);
   const { burgers } = useSelector((state) => state.burgers);
   const { pizzas } = useSelector((state) => state.pizzas);
   const { deserts } = useSelector((state) => state.deserts);
@@ -31,6 +32,16 @@ const MainMenu = () => {
     dispatch(fetchSoup());
     dispatch(fetchBever());
   }, []);
+
+  if(isLoading){
+    return (
+      <Typography variant="h3" sx={{ textAlign: "center", m: 14 }}>
+        <LinearProgress color="inherit" />
+      </Typography>
+    )
+  }
+    
+  
 
   return (
     <>
