@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poly:ital@0;1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+/* @import "compass/css3"; */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#food_court {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.shops {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: grey; */
+  /* margin: 80px 0px; */
+  margin-bottom: 50px;
+}
+
+.shop-item {
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  margin-left: 50px;
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.shp-itms {
+  filter: grayscale(100%);
+  cursor: pointer;
+}
+
+.shp-itms:hover {
+  filter: grayscale(0%);
+  /* transition: all 2s ;  */
+  /* background-color: ; */
+}
+
+.card-items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* .paratha{
+  margin-top: 100px;
+} */
+
+.card-recp {
+  width: 322px;
+  height: auto;
+}
+
+.user {
+  width: 70%;
+  height: 500px;
+  /* border: 1px solid black; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.user-1 {
+  width: auto;
+  height: 450px;
+  /* border: 1px solid black; */
+  background-color: rgb(255, 251, 219);
+  border-radius: 20px;
+}
+
+.user-2 {
+  width: auto;
+  height: 450px;
+  /* border: 1px solid black; */
+  background-color: rgb(255, 251, 219);
+  border-radius: 20px;
+}
+
+.user-review {
+  width: 100%;
+  height: 500px;
+  /* border: 1px solid black; */
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.card {
+  border-radius: 25% 10%;
+}
+
+.img:hover {
+  filter: grayscale(50%);
+}
+
+.img {
+  border-radius: 25% 10% 10% 0;
+}
+.cartitems {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 700;
+  font-style: normal;
+  cursor: pointer;
+  
+}
+
+.carts-1:hover{
+  transition: all ease-in-out;
+  transform: scale(1.1);
+  box-shadow: 10px 10px 13px rgb(111, 110, 110);
+
+}
+.carts-1 {
+  border-radius: 30px;
+  /* border: 1px solid rgb(178, 178, 178); */
+  /* width: 80%; */
+  /* height: 23%; */
+  box-shadow: 3px 5px 8px rgb(111, 110, 110);
+}
+
+.cart-item-text{
+  width: 120px;
+}
+
+
+
+
+
+.btns .btn.circle {
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  text-align: center;
+}
+/* line 174, ../sass/test.scss */
+.btns .btn.circle.border {
+  border: 2px solid transparent;
+  -webkit-transition: border-top-color 0.15s linear 0s, border-right-color 0.15s linear 0.1s, border-bottom-color 0.15s linear 0.2s;
+  -moz-transition: border-top-color 0.15s linear 0s, border-right-color 0.15s linear 0.1s, border-bottom-color 0.15s linear 0.2s;
+  -ms-transition: border-top-color 0.15s linear 0s, border-right-color 0.15s linear 0.1s, border-bottom-color 0.15s linear 0.2s;
+  -o-transition: border-top-color 0.15s linear 0s, border-right-color 0.15s linear 0.1s, border-bottom-color 0.15s linear 0.2s;
+  transition: border-top-color 0.15s linear 0s, border-right-color 0.15s linear 0.1s, border-bottom-color 0.15s linear 0.2s;
+}
+/* line 177, ../sass/test.scss */
+.btns .btn.circle.border:hover {
+  border-color: #0392cf;
+}
+
+
+.card-item-price:hover{
+  color: orange;
+
+}
+
