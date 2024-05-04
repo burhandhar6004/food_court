@@ -1,6 +1,6 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
-import ServiceParatha from "./parathaService";
 // import ServiceParatha from "./parathaService";
+import axios from "axios";
 
 const prathaSlice = createSlice({
   name: "burhan",
@@ -46,7 +46,8 @@ export default prathaSlice.reducer;
 
 export const fetchParatha = createAsyncThunk("FETCH/PARATHA", async () => {
   try {
-    return await ServiceParatha.getParatha();
+    const respone = await axios.get("https://foodapi-iu1v.onrender.com/app/paratha")
+    return respone.data
   } catch (error) {
     console.log(error);
   }

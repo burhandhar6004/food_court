@@ -55,7 +55,7 @@ const HeroSection = () => {
       </h3>{" "}
       <br />
       <div className="grid grid-cols-1 gap-3 md:grid-cols-4 justify-items-center">
-        {parathas.map((paratha) => (
+        {parathas?.map((paratha) => (
           <CardItems key={paratha._id} paratha={paratha} />
         ))}
       </div>

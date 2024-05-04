@@ -1,5 +1,6 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
-import serviceBurger from "./burgerService";
+// import serviceBurger from "./burgerService";
+import axios from "axios";
 
 
 const burgerSlice = createSlice({
@@ -44,7 +45,8 @@ export default burgerSlice.reducer;
 
 export const fetchBurger = createAsyncThunk("FETCH/BURGER", async()=>{
     try {
-        return await serviceBurger.getBurger()
+      const respone = await axios.get("https://foodapi-iu1v.onrender.com/app/burger")
+      return respone.data
     } catch (error) {
         console.log(error)
     }

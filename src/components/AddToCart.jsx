@@ -53,7 +53,7 @@ const AddToCart = () => {
           <h2 class="text-3xl font-extrabold text-[#333]">Food Cart</h2>
           <div class="grid lg:grid-cols-3 gap-8 items-start mt-8">
             <div class="divide-y lg:col-span-2">
-              {cardsItem.map((item) => (
+              {cardsItem?.map((item) => (
                 <div class="flex items-start justify-between gap-4 py-8">
                   <div class="flex gap-6">
                     <div class="h-64 bg-gray-100 p-6 rounded">

@@ -1,5 +1,6 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
-import serviceDesert from "./desertService";
+// import serviceDesert from "./desertService";
+import axios from "axios";
 
 
 const desertSlice = createSlice({
@@ -43,7 +44,8 @@ export default desertSlice.reducer;
 
 export const fetchDesert = createAsyncThunk("FETCH/DESERT", async()=>{
     try {
-        return await serviceDesert.getDesert()
+      const respone = await axios.get("https://foodapi-iu1v.onrender.com/app/desert")
+      return respone.data
     } catch (error) {
         console.log(error)
     }

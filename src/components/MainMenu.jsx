@@ -55,7 +55,7 @@ const MainMenu = () => {
         <br />
         <div className="card-items">
           <div class="grid grid-cols-2 md:grid-cols-4 gap-4 justify-items-center ">
-            {parathas.map((paratha) => (
+            {parathas?.map((paratha) => (
               <Paratha key={paratha._id} paratha={paratha} />
             ))}
           </div>
@@ -72,7 +72,7 @@ const MainMenu = () => {
         <br />
         <div className="card-items">
           <div class="grid grid-cols-2 md:grid-cols-4 gap-4 justify-items-center ">
-            {burgers.map((burger) => (
+            {burgers?.map((burger) => (
               <Burger key={burger._id} burger={burger} />
             ))}
           </div>
@@ -89,7 +89,7 @@ const MainMenu = () => {
         <br />
         <div className="card-items">
           <div class="grid grid-cols-2 md:grid-cols-4 gap-4 justify-items-center">
-            {pizzas.map((pizza) => (
+            {pizzas?.map((pizza) => (
               <Pizza key={pizza._id} pizza={pizza} />
             ))}
           </div>
@@ -106,7 +106,7 @@ const MainMenu = () => {
         <br />
         <div className="card-items">
           <div class="grid grid-cols-2 md:grid-cols-4 gap-4 justify-items-center">
-            {deserts.map((desert) => (
+            {deserts?.map((desert) => (
               <Desert key={desert._id} desert={desert} />
             ))}
           </div>
@@ -123,7 +123,7 @@ const MainMenu = () => {
         <br />
         <div className="card-items">
           <div class="grid grid-cols-2 md:grid-cols-4 gap-4 justify-items-center">
-            {soups.map((soup) => (
+            {soups?.map((soup) => (
               <Soup key={soup._id} soup={soup} />
             ))}
           </div>
@@ -141,7 +141,7 @@ const MainMenu = () => {
         <div className="card-items">
           <div  class="grid grid-cols-2 md:grid-cols-4 gap-4 justify-items-center">
             {
-              beverages.map(beverage => <Beverage key={beverage._id} beverage={beverage} />)
+              beverages?.map(beverage => <Beverage key={beverage._id} beverage={beverage} />)
             }
           </div>
         </div>

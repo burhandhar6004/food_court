@@ -1,21 +1,21 @@
-import axios from "axios";
+// import axios from "axios";
 
-// const API = "/app/"
+// // const API = "/app/"
 
-const getParatha = async () => {
-  const respone = await axios.get("/app/paratha")
-//   
-  return respone.data
-};
-
-// const getPartaha = async () => {
-//   const respone = await fetch("/app/paratha");
-//   const data = await respone.json();
-//   console.log(data)
+// const getParatha = async () => {
+//   const respone = await axios.get("/app/paratha")
+// //   
+//   return respone.data
 // };
 
-const ServiceParatha = {
-    getParatha
-};
+// // const getPartaha = async () => {
+// //   const respone = await fetch("/app/paratha");
+// //   const data = await respone.json();
+// //   console.log(data)
+// // };
 
-export default ServiceParatha;
+// const ServiceParatha = {
+//     getParatha
+// };
+
+// export default ServiceParatha;
