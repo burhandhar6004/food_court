@@ -16,7 +16,7 @@ const Desert = ({ desert }) => {
       <div className="carts-1 px-5 pb-5 flex flex-col mt-4 items-center justify-center">
         <img
           className="cart-item-img rounded-2xl border mt-5"
-          src={desert.img}
+          src={desert?.img}
         />
         <div class="px-5 pb-5">
           <div className="mt-4">
@@ -26,12 +26,12 @@ const Desert = ({ desert }) => {
           </div>
           <a href="#">
             <h5 class="cart-item-text text-center font-semibold tracking-tight dark:text-white text-orange-600 mt-3">
-              {desert.name}
+              {desert?.name}
             </h5>
           </a>
           <div class="flex items-center justify-around mt-3">
             <span class="text-2xl font-bold text-gray-900 dark:text-white card-item-price">
-              $ {desert.price}
+              $ {desert?.price}
             </span>
 
             <div class="btns">
