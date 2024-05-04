@@ -9,6 +9,7 @@ import Login from './Pages/Login'
 import UserRegister from './Pages/UserRegister'
 import AddToCart from './components/AddToCart'
 import PaymentForm from './Pages/PaymentForm'
+import PAgeNotFound from './components/PAgeNotFound'
 // import AddToCart from './Pages/AddToCart'
 
 const App = () => {
@@ -16,6 +17,7 @@ const App = () => {
     <BrowserRouter>
       <Navbar/>
      <Routes>
+     <Route path='*' element={<PAgeNotFound/>} />
      <Route path='/' element={<Home/>} />
      <Route path='/menu' element = {<MainMenu/>} />
      <Route path='/about' element = {<AboutUs/>} />
